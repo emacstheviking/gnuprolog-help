@@ -1,0 +1,835 @@
+{
+    "apiName": "GNUPrologHelp",
+    "apiGuid": "948143e8-ee0c-4f5c-af5a-8388bbd5816d",
+    "generatedAt": 1432758645,
+    "pages": [
+        {
+            "pageUrl": "http://www.gprolog.org/manual/gprolog.html",
+            "results": [
+                {
+                    "predicate": "http://www.gprolog.org/manual/gprolog.html#var%2F1",
+                    "predicate/_source": "#var%2F1",
+                    "predicate/_text": "8.1.1 var/1, nonvar/1, atom/1, integer/1, float/1, number/1, atomic/1, compound/1, callable/1, ground/1, is_list/1, list/1, partial_list/1, list_or_partial_list/1"
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#sec74",
+                        "http://www.gprolog.org/manual/gprolog.html#sec75",
+                        "http://www.gprolog.org/manual/gprolog.html#sec76"
+                    ],
+                    "predicate/_source": [
+                        "#sec74",
+                        "#sec75",
+                        "#sec76"
+                    ],
+                    "predicate/_text": [
+                        "8.2.1 (=)/2 - Prolog unification",
+                        "8.2.2 unify_with_occurs_check/2",
+                        "8.2.3 (\\=)/2 - not Prolog unifiable"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#sec78",
+                        "http://www.gprolog.org/manual/gprolog.html#%28%3D%3D%29%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#compare%2F3"
+                    ],
+                    "predicate/_source": [
+                        "#sec78",
+                        "#%28%3D%3D%29%2F2",
+                        "#compare%2F3"
+                    ],
+                    "predicate/_text": [
+                        "8.3.1 Standard total ordering of terms",
+                        "8.3.2 (==)/2 - term identical, (\\==)/2 - term not identical, (@<)/2 - term less than, (@=<)/2 - term less than or equal to, (@>)/2 - term greater than, (@>=)/2 - term greater than or equal to",
+                        "8.3.3 compare/3"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#functor%2F3",
+                        "http://www.gprolog.org/manual/gprolog.html#arg%2F3",
+                        "http://www.gprolog.org/manual/gprolog.html#%28%3D..%29%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#sec85",
+                        "http://www.gprolog.org/manual/gprolog.html#sec86",
+                        "http://www.gprolog.org/manual/gprolog.html#sec87",
+                        "http://www.gprolog.org/manual/gprolog.html#sec88",
+                        "http://www.gprolog.org/manual/gprolog.html#term-hash%2F4",
+                        "http://www.gprolog.org/manual/gprolog.html#sec90"
+                    ],
+                    "predicate/_source": [
+                        "#functor%2F3",
+                        "#arg%2F3",
+                        "#%28%3D..%29%2F2",
+                        "#sec85",
+                        "#sec86",
+                        "#sec87",
+                        "#sec88",
+                        "#term-hash%2F4",
+                        "#sec90"
+                    ],
+                    "predicate/_text": [
+                        "8.4.1 functor/3",
+                        "8.4.2 arg/3",
+                        "8.4.3 (=..)/2 - univ",
+                        "8.4.4 copy_term/2",
+                        "8.4.5 term_variables/2, term_variables/3",
+                        "8.4.6 subsumes_term/2",
+                        "8.4.7 acyclic_term/1",
+                        "8.4.8 term_hash/4, term_hash/2",
+                        "8.4.9 setarg/4, setarg/3"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#name-singleton-vars%2F1",
+                        "http://www.gprolog.org/manual/gprolog.html#name-query-vars%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#bind-variables%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#sec95"
+                    ],
+                    "predicate/_source": [
+                        "#name-singleton-vars%2F1",
+                        "#name-query-vars%2F2",
+                        "#bind-variables%2F2",
+                        "#sec95"
+                    ],
+                    "predicate/_text": [
+                        "8.5.1 name_singleton_vars/1",
+                        "8.5.2 name_query_vars/2",
+                        "8.5.3 bind_variables/2, numbervars/3, numbervars/1",
+                        "8.5.4 term_ref/2"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#sec97",
+                        "http://www.gprolog.org/manual/gprolog.html#sec98",
+                        "http://www.gprolog.org/manual/gprolog.html#%28%3D%3A%3D%29%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#sec100"
+                    ],
+                    "predicate/_source": [
+                        "#sec97",
+                        "#sec98",
+                        "#%28%3D%3A%3D%29%2F2",
+                        "#sec100"
+                    ],
+                    "predicate/_text": [
+                        "8.6.1 Evaluation of an arithmetic expression",
+                        "8.6.2 (is)/2 - evaluate expression",
+                        "8.6.3 (=:=)/2 - arithmetic equal, (=\\=)/2 - arithmetic not equal, (<)/2 - arithmetic less than, (=<)/2 - arithmetic less than or equal to, (>)/2 - arithmetic greater than, (>=)/2 - arithmetic greater than or equal to",
+                        "8.6.4 succ/2"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#sec102",
+                        "http://www.gprolog.org/manual/gprolog.html#sec103",
+                        "http://www.gprolog.org/manual/gprolog.html#sec104",
+                        "http://www.gprolog.org/manual/gprolog.html#sec105",
+                        "http://www.gprolog.org/manual/gprolog.html#sec106",
+                        "http://www.gprolog.org/manual/gprolog.html#abolish%2F1"
+                    ],
+                    "predicate/_source": [
+                        "#sec102",
+                        "#sec103",
+                        "#sec104",
+                        "#sec105",
+                        "#sec106",
+                        "#abolish%2F1"
+                    ],
+                    "predicate/_text": [
+                        "8.7.1 Introduction",
+                        "8.7.2 asserta/1, assertz/1",
+                        "8.7.3 retract/1",
+                        "8.7.4 retractall/1",
+                        "8.7.5 clause/2",
+                        "8.7.6 abolish/1"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#current-predicate%2F1",
+                        "http://www.gprolog.org/manual/gprolog.html#predicate-property%2F2"
+                    ],
+                    "predicate/_source": [
+                        "#current-predicate%2F1",
+                        "#predicate-property%2F2"
+                    ],
+                    "predicate/_text": [
+                        "8.8.1 current_predicate/1",
+                        "8.8.2 predicate_property/2"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#sec112",
+                        "http://www.gprolog.org/manual/gprolog.html#sec113",
+                        "http://www.gprolog.org/manual/gprolog.html#sec114"
+                    ],
+                    "predicate/_source": [
+                        "#sec112",
+                        "#sec113",
+                        "#sec114"
+                    ],
+                    "predicate/_text": [
+                        "8.9.1 Introduction",
+                        "8.9.2 findall/3",
+                        "8.9.3 bagof/3, setof/3"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#sec116",
+                        "http://www.gprolog.org/manual/gprolog.html#sec117",
+                        "http://www.gprolog.org/manual/gprolog.html#sec118",
+                        "http://www.gprolog.org/manual/gprolog.html#set-input%2F1",
+                        "http://www.gprolog.org/manual/gprolog.html#set-output%2F1",
+                        "http://www.gprolog.org/manual/gprolog.html#open%2F4",
+                        "http://www.gprolog.org/manual/gprolog.html#close%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#flush-output%2F1",
+                        "http://www.gprolog.org/manual/gprolog.html#current-stream%2F1",
+                        "http://www.gprolog.org/manual/gprolog.html#stream-property%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#sec126",
+                        "http://www.gprolog.org/manual/gprolog.html#stream-position%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#set-stream-position%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#sec129",
+                        "http://www.gprolog.org/manual/gprolog.html#sec130",
+                        "http://www.gprolog.org/manual/gprolog.html#line-count%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#line-position%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#sec133",
+                        "http://www.gprolog.org/manual/gprolog.html#sec134",
+                        "http://www.gprolog.org/manual/gprolog.html#add-stream-alias%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#sec136",
+                        "http://www.gprolog.org/manual/gprolog.html#add-stream-mirror%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#remove-stream-mirror%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#sec139",
+                        "http://www.gprolog.org/manual/gprolog.html#set-stream-type%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#sec141",
+                        "http://www.gprolog.org/manual/gprolog.html#set-stream-buffering%2F2"
+                    ],
+                    "predicate/_source": [
+                        "#sec116",
+                        "#sec117",
+                        "#sec118",
+                        "#set-input%2F1",
+                        "#set-output%2F1",
+                        "#open%2F4",
+                        "#close%2F2",
+                        "#flush-output%2F1",
+                        "#current-stream%2F1",
+                        "#stream-property%2F2",
+                        "#sec126",
+                        "#stream-position%2F2",
+                        "#set-stream-position%2F2",
+                        "#sec129",
+                        "#sec130",
+                        "#line-count%2F2",
+                        "#line-position%2F2",
+                        "#sec133",
+                        "#sec134",
+                        "#add-stream-alias%2F2",
+                        "#sec136",
+                        "#add-stream-mirror%2F2",
+                        "#remove-stream-mirror%2F2",
+                        "#sec139",
+                        "#set-stream-type%2F2",
+                        "#sec141",
+                        "#set-stream-buffering%2F2"
+                    ],
+                    "predicate/_text": [
+                        "8.10.1 Introduction",
+                        "8.10.2 current_input/1",
+                        "8.10.3 current_output/1",
+                        "8.10.4 set_input/1",
+                        "8.10.5 set_output/1",
+                        "8.10.6 open/4, open/3",
+                        "8.10.7 close/2, close/1",
+                        "8.10.8 flush_output/1, flush_output/0",
+                        "8.10.9 current_stream/1",
+                        "8.10.10 stream_property/2",
+                        "8.10.11 at_end_of_stream/1, at_end_of_stream/0",
+                        "8.10.12 stream_position/2",
+                        "8.10.13 set_stream_position/2",
+                        "8.10.14 seek/4",
+                        "8.10.15 character_count/2",
+                        "8.10.16 line_count/2",
+                        "8.10.17 line_position/2",
+                        "8.10.18 stream_line_column/3",
+                        "8.10.19 set_stream_line_column/3",
+                        "8.10.20 add_stream_alias/2",
+                        "8.10.21 current_alias/2",
+                        "8.10.22 add_stream_mirror/2",
+                        "8.10.23 remove_stream_mirror/2",
+                        "8.10.24 current_mirror/2",
+                        "8.10.25 set_stream_type/2",
+                        "8.10.26 set_stream_eof_action/2",
+                        "8.10.27 set_stream_buffering/2"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#sec144",
+                        "http://www.gprolog.org/manual/gprolog.html#sec145",
+                        "http://www.gprolog.org/manual/gprolog.html#sec146",
+                        "http://www.gprolog.org/manual/gprolog.html#open-output-atom-stream%2F1",
+                        "http://www.gprolog.org/manual/gprolog.html#close-output-atom-stream%2F2"
+                    ],
+                    "predicate/_source": [
+                        "#sec144",
+                        "#sec145",
+                        "#sec146",
+                        "#open-output-atom-stream%2F1",
+                        "#close-output-atom-stream%2F2"
+                    ],
+                    "predicate/_text": [
+                        "8.11.1 Introduction",
+                        "8.11.2 open_input_atom_stream/2, open_input_chars_stream/2, open_input_codes_stream/2",
+                        "8.11.3 close_input_atom_stream/1, close_input_chars_stream/1, close_input_codes_stream/1",
+                        "8.11.4 open_output_atom_stream/1, open_output_chars_stream/1, open_output_codes_stream/1",
+                        "8.11.5 close_output_atom_stream/2, close_output_chars_stream/2, close_output_codes_stream/2"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#get-char%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#sec151",
+                        "http://www.gprolog.org/manual/gprolog.html#sec152",
+                        "http://www.gprolog.org/manual/gprolog.html#sec153",
+                        "http://www.gprolog.org/manual/gprolog.html#put-char%2F2"
+                    ],
+                    "predicate/_source": [
+                        "#get-char%2F2",
+                        "#sec151",
+                        "#sec152",
+                        "#sec153",
+                        "#put-char%2F2"
+                    ],
+                    "predicate/_text": [
+                        "8.12.1 get_char/2, get_char/1, get_code/1, get_code/2",
+                        "8.12.2 get_key/2, get_key/1 get_key_no_echo/2, get_key_no_echo/1",
+                        "8.12.3 peek_char/2, peek_char/1, peek_code/1, peek_code/2",
+                        "8.12.4 unget_char/2, unget_char/1, unget_code/2, unget_code/1",
+                        "8.12.5 put_char/2, put_char/1, put_code/1, put_code/2, nl/1, nl/0"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#sec156",
+                        "http://www.gprolog.org/manual/gprolog.html#sec157",
+                        "http://www.gprolog.org/manual/gprolog.html#sec158",
+                        "http://www.gprolog.org/manual/gprolog.html#sec159"
+                    ],
+                    "predicate/_source": [
+                        "#sec156",
+                        "#sec157",
+                        "#sec158",
+                        "#sec159"
+                    ],
+                    "predicate/_text": [
+                        "8.13.1 get_byte/2, get_byte/1",
+                        "8.13.2 peek_byte/2, peek_byte/1",
+                        "8.13.3 unget_byte/2, unget_byte/1",
+                        "8.13.4 put_byte/2, put_byte/1"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#read-term%2F3",
+                        "http://www.gprolog.org/manual/gprolog.html#read-atom%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#read-token%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#syntax-error-info%2F4",
+                        "http://www.gprolog.org/manual/gprolog.html#sec165",
+                        "http://www.gprolog.org/manual/gprolog.html#write-term%2F3",
+                        "http://www.gprolog.org/manual/gprolog.html#format%2F3",
+                        "http://www.gprolog.org/manual/gprolog.html#portray-clause%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#sec169",
+                        "http://www.gprolog.org/manual/gprolog.html#op%2F3%3A%28Term-input%2Foutput%29",
+                        "http://www.gprolog.org/manual/gprolog.html#sec171",
+                        "http://www.gprolog.org/manual/gprolog.html#char-conversion%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#current-char-conversion%2F2"
+                    ],
+                    "predicate/_source": [
+                        "#read-term%2F3",
+                        "#read-atom%2F2",
+                        "#read-token%2F2",
+                        "#syntax-error-info%2F4",
+                        "#sec165",
+                        "#write-term%2F3",
+                        "#format%2F3",
+                        "#portray-clause%2F2",
+                        "#sec169",
+                        "#op%2F3%3A%28Term-input%2Foutput%29",
+                        "#sec171",
+                        "#char-conversion%2F2",
+                        "#current-char-conversion%2F2"
+                    ],
+                    "predicate/_text": [
+                        "8.14.1 read_term/3, read_term/2, read/2, read/1",
+                        "8.14.2 read_atom/2, read_atom/1, read_integer/2, read_integer/1, read_number/2, read_number/1",
+                        "8.14.3 read_token/2, read_token/1",
+                        "8.14.4 syntax_error_info/4",
+                        "8.14.5 last_read_start_line_column/2",
+                        "8.14.6 write_term/3, write_term/2, write/2, write/1, writeq/2, writeq/1, write_canonical/2, write_canonical/1, display/2, display/1, print/2, print/1",
+                        "8.14.7 format/3, format/2",
+                        "8.14.8 portray_clause/2, portray_clause/1",
+                        "8.14.9 get_print_stream/1",
+                        "8.14.10 op/3",
+                        "8.14.11 current_op/3",
+                        "8.14.12 char_conversion/2",
+                        "8.14.13 current_char_conversion/2"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#read-term-from-atom%2F3",
+                        "http://www.gprolog.org/manual/gprolog.html#sec176",
+                        "http://www.gprolog.org/manual/gprolog.html#sec177",
+                        "http://www.gprolog.org/manual/gprolog.html#sec178",
+                        "http://www.gprolog.org/manual/gprolog.html#sec179",
+                        "http://www.gprolog.org/manual/gprolog.html#sec180"
+                    ],
+                    "predicate/_source": [
+                        "#read-term-from-atom%2F3",
+                        "#sec176",
+                        "#sec177",
+                        "#sec178",
+                        "#sec179",
+                        "#sec180"
+                    ],
+                    "predicate/_text": [
+                        "8.15.1 read_term_from_atom/3, read_from_atom/2, read_token_from_atom/2",
+                        "8.15.2 read_term_from_chars/3, read_from_chars/2, read_token_from_chars/2",
+                        "8.15.3 read_term_from_codes/3, read_from_codes/2, read_token_from_codes/2",
+                        "8.15.4 write_term_to_atom/3, write_to_atom/2, writeq_to_atom/2, write_canonical_to_atom/2, display_to_atom/2, print_to_atom/2, format_to_atom/3",
+                        "8.15.5 write_term_to_chars/3, write_to_chars/2, writeq_to_chars/2, write_canonical_to_chars/2, display_to_chars/2, print_to_chars/2, format_to_chars/3",
+                        "8.15.6 write_term_to_codes/3, write_to_codes/2, writeq_to_codes/2, write_canonical_to_codes/2, display_to_codes/2, print_to_codes/2, format_to_codes/3"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#sec182",
+                        "http://www.gprolog.org/manual/gprolog.html#sec183",
+                        "http://www.gprolog.org/manual/gprolog.html#sec184",
+                        "http://www.gprolog.org/manual/gprolog.html#sec185",
+                        "http://www.gprolog.org/manual/gprolog.html#sec186",
+                        "http://www.gprolog.org/manual/gprolog.html#sec187"
+                    ],
+                    "predicate/_source": [
+                        "#sec182",
+                        "#sec183",
+                        "#sec184",
+                        "#sec185",
+                        "#sec186",
+                        "#sec187"
+                    ],
+                    "predicate/_text": [
+                        "8.16.1 Introduction",
+                        "8.16.2 see/1, tell/1, append/1",
+                        "8.16.3 seeing/1, telling/1",
+                        "8.16.4 seen/0, told/0",
+                        "8.16.5 get0/1, get/1, skip/1",
+                        "8.16.6 put/1, tab/1"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#sec189",
+                        "http://www.gprolog.org/manual/gprolog.html#expand-term%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#sec191"
+                    ],
+                    "predicate/_source": [
+                        "#sec189",
+                        "#expand-term%2F2",
+                        "#sec191"
+                    ],
+                    "predicate/_text": [
+                        "8.17.1 Definite clause grammars",
+                        "8.17.2 expand_term/2, term_expansion/2",
+                        "8.17.3 phrase/3, phrase/2"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#abort%2F0",
+                        "http://www.gprolog.org/manual/gprolog.html#sec194",
+                        "http://www.gprolog.org/manual/gprolog.html#sec195",
+                        "http://www.gprolog.org/manual/gprolog.html#sec196"
+                    ],
+                    "predicate/_source": [
+                        "#abort%2F0",
+                        "#sec194",
+                        "#sec195",
+                        "#sec196"
+                    ],
+                    "predicate/_text": [
+                        "8.18.1 abort/0, stop/0, top_level/0, break/0, halt/1, halt/0",
+                        "8.18.2 false/0, once/1, (\\+)/1 - not provable, call/2-11, call_with_args/1-11, call_det/2, forall/2",
+                        "8.18.3 repeat/0",
+                        "8.18.4 between/3, for/3"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#sec198",
+                        "http://www.gprolog.org/manual/gprolog.html#sec199",
+                        "http://www.gprolog.org/manual/gprolog.html#sec200",
+                        "http://www.gprolog.org/manual/gprolog.html#char-code%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#sec202",
+                        "http://www.gprolog.org/manual/gprolog.html#atom-chars%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#number-atom%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#sec205",
+                        "http://www.gprolog.org/manual/gprolog.html#sec206",
+                        "http://www.gprolog.org/manual/gprolog.html#current-atom%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#atom-property%2F2"
+                    ],
+                    "predicate/_source": [
+                        "#sec198",
+                        "#sec199",
+                        "#sec200",
+                        "#char-code%2F2",
+                        "#sec202",
+                        "#atom-chars%2F2",
+                        "#number-atom%2F2",
+                        "#sec205",
+                        "#sec206",
+                        "#current-atom%2F2",
+                        "#atom-property%2F2"
+                    ],
+                    "predicate/_text": [
+                        "8.19.1 atom_length/2",
+                        "8.19.2 atom_concat/3",
+                        "8.19.3 sub_atom/5",
+                        "8.19.4 char_code/2",
+                        "8.19.5 lower_upper/2",
+                        "8.19.6 atom_chars/2, atom_codes/2",
+                        "8.19.7 number_atom/2, number_chars/2, number_codes/2",
+                        "8.19.8 name/2",
+                        "8.19.9 new_atom/2, new_atom/1",
+                        "8.19.10 current_atom/1",
+                        "8.19.11 atom_property/2"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#sec210",
+                        "http://www.gprolog.org/manual/gprolog.html#member%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#sec212",
+                        "http://www.gprolog.org/manual/gprolog.html#sec213",
+                        "http://www.gprolog.org/manual/gprolog.html#sec214",
+                        "http://www.gprolog.org/manual/gprolog.html#sec215",
+                        "http://www.gprolog.org/manual/gprolog.html#sec216",
+                        "http://www.gprolog.org/manual/gprolog.html#sec217",
+                        "http://www.gprolog.org/manual/gprolog.html#sec218",
+                        "http://www.gprolog.org/manual/gprolog.html#sec219",
+                        "http://www.gprolog.org/manual/gprolog.html#sec220",
+                        "http://www.gprolog.org/manual/gprolog.html#sec221",
+                        "http://www.gprolog.org/manual/gprolog.html#sec222",
+                        "http://www.gprolog.org/manual/gprolog.html#sort%2F2"
+                    ],
+                    "predicate/_source": [
+                        "#sec210",
+                        "#member%2F2",
+                        "#sec212",
+                        "#sec213",
+                        "#sec214",
+                        "#sec215",
+                        "#sec216",
+                        "#sec217",
+                        "#sec218",
+                        "#sec219",
+                        "#sec220",
+                        "#sec221",
+                        "#sec222",
+                        "#sort%2F2"
+                    ],
+                    "predicate/_text": [
+                        "8.20.1 append/3",
+                        "8.20.2 member/2, memberchk/2",
+                        "8.20.3 reverse/2",
+                        "8.20.4 delete/3, select/3",
+                        "8.20.5 subtract/3",
+                        "8.20.6 permutation/2",
+                        "8.20.7 prefix/2, suffix/2",
+                        "8.20.8 sublist/2",
+                        "8.20.9 last/2",
+                        "8.20.10 length/2",
+                        "8.20.11 nth/3",
+                        "8.20.12 max_list/2, min_list/2, sum_list/2",
+                        "8.20.13 maplist/2-8",
+                        "8.20.14 sort/2, msort/2, keysort/2 sort/1, msort/1, keysort/1"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#sec225",
+                        "http://www.gprolog.org/manual/gprolog.html#g-assign%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#sec227",
+                        "http://www.gprolog.org/manual/gprolog.html#sec228",
+                        "http://www.gprolog.org/manual/gprolog.html#sec229",
+                        "http://www.gprolog.org/manual/gprolog.html#sec230",
+                        "http://www.gprolog.org/manual/gprolog.html#sec231"
+                    ],
+                    "predicate/_source": [
+                        "#sec225",
+                        "#g-assign%2F2",
+                        "#sec227",
+                        "#sec228",
+                        "#sec229",
+                        "#sec230",
+                        "#sec231"
+                    ],
+                    "predicate/_text": [
+                        "8.21.1 Introduction",
+                        "8.21.2 g_assign/2, g_assignb/2, g_link/2",
+                        "8.21.3 g_read/2",
+                        "8.21.4 g_array_size/2",
+                        "8.21.5 g_inc/3, g_inc/2, g_inco/2, g_inc/1, g_dec/3, g_dec/2, g_deco/2, g_dec/1",
+                        "8.21.6 g_set_bit/2, g_reset_bit/2, g_test_set_bit/2, g_test_reset_bit/2",
+                        "8.21.7 Examples"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#set-prolog-flag%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#current-prolog-flag%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#set-bip-name%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#current-bip-name%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#write-pl-state-file%2F1"
+                    ],
+                    "predicate/_source": [
+                        "#set-prolog-flag%2F2",
+                        "#current-prolog-flag%2F2",
+                        "#set-bip-name%2F2",
+                        "#current-bip-name%2F2",
+                        "#write-pl-state-file%2F1"
+                    ],
+                    "predicate/_text": [
+                        "8.22.1 set_prolog_flag/2",
+                        "8.22.2 current_prolog_flag/2",
+                        "8.22.3 set_bip_name/2",
+                        "8.22.4 current_bip_name/2",
+                        "8.22.5 write_pl_state_file/1, read_pl_state_file/1"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#consult%2F1",
+                        "http://www.gprolog.org/manual/gprolog.html#load%2F1",
+                        "http://www.gprolog.org/manual/gprolog.html#listing%2F1"
+                    ],
+                    "predicate/_source": [
+                        "#consult%2F1",
+                        "#load%2F1",
+                        "#listing%2F1"
+                    ],
+                    "predicate/_text": [
+                        "8.23.1 consult/1, â€™.â€™/2 - program consult",
+                        "8.23.2 load/1",
+                        "8.23.3 listing/1, listing/0"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#statistics%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#user-time%2F1"
+                    ],
+                    "predicate/_source": [
+                        "#statistics%2F2",
+                        "#user-time%2F1"
+                    ],
+                    "predicate/_text": [
+                        "8.24.1 statistics/0, statistics/2",
+                        "8.24.2 user_time/1, system_time/1, cpu_time/1, real_time/1"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#sec246",
+                        "http://www.gprolog.org/manual/gprolog.html#sec247",
+                        "http://www.gprolog.org/manual/gprolog.html#sec248",
+                        "http://www.gprolog.org/manual/gprolog.html#sec249"
+                    ],
+                    "predicate/_source": [
+                        "#sec246",
+                        "#sec247",
+                        "#sec248",
+                        "#sec249"
+                    ],
+                    "predicate/_text": [
+                        "8.25.1 set_seed/1, randomize/0",
+                        "8.25.2 get_seed/1",
+                        "8.25.3 random/1",
+                        "8.25.4 random/3"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#absolute-file-name%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#sec252",
+                        "http://www.gprolog.org/manual/gprolog.html#sec253",
+                        "http://www.gprolog.org/manual/gprolog.html#prolog-file-name%2F2"
+                    ],
+                    "predicate/_source": [
+                        "#absolute-file-name%2F2",
+                        "#sec252",
+                        "#sec253",
+                        "#prolog-file-name%2F2"
+                    ],
+                    "predicate/_text": [
+                        "8.26.1 absolute_file_name/2",
+                        "8.26.2 is_absolute_file_name/1, is_relative_file_name/1",
+                        "8.26.3 decompose_file_name/4",
+                        "8.26.4 prolog_file_name/2"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#argument-counter%2F1",
+                        "http://www.gprolog.org/manual/gprolog.html#argument-value%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#argument-list%2F1",
+                        "http://www.gprolog.org/manual/gprolog.html#sec259",
+                        "http://www.gprolog.org/manual/gprolog.html#sec260",
+                        "http://www.gprolog.org/manual/gprolog.html#sec261",
+                        "http://www.gprolog.org/manual/gprolog.html#sec262",
+                        "http://www.gprolog.org/manual/gprolog.html#sec263",
+                        "http://www.gprolog.org/manual/gprolog.html#sec264",
+                        "http://www.gprolog.org/manual/gprolog.html#file-permission%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#file-property%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#sec267",
+                        "http://www.gprolog.org/manual/gprolog.html#sec268",
+                        "http://www.gprolog.org/manual/gprolog.html#date-time%2F1",
+                        "http://www.gprolog.org/manual/gprolog.html#sec270",
+                        "http://www.gprolog.org/manual/gprolog.html#sec271",
+                        "http://www.gprolog.org/manual/gprolog.html#sec272",
+                        "http://www.gprolog.org/manual/gprolog.html#sec273",
+                        "http://www.gprolog.org/manual/gprolog.html#sec274",
+                        "http://www.gprolog.org/manual/gprolog.html#sec275",
+                        "http://www.gprolog.org/manual/gprolog.html#popen%2F3",
+                        "http://www.gprolog.org/manual/gprolog.html#sec277",
+                        "http://www.gprolog.org/manual/gprolog.html#sec278",
+                        "http://www.gprolog.org/manual/gprolog.html#sec279",
+                        "http://www.gprolog.org/manual/gprolog.html#wait%2F2",
+                        "http://www.gprolog.org/manual/gprolog.html#sec281",
+                        "http://www.gprolog.org/manual/gprolog.html#sec282",
+                        "http://www.gprolog.org/manual/gprolog.html#sec283",
+                        "http://www.gprolog.org/manual/gprolog.html#select%2F5"
+                    ],
+                    "predicate/_source": [
+                        "#argument-counter%2F1",
+                        "#argument-value%2F2",
+                        "#argument-list%2F1",
+                        "#sec259",
+                        "#sec260",
+                        "#sec261",
+                        "#sec262",
+                        "#sec263",
+                        "#sec264",
+                        "#file-permission%2F2",
+                        "#file-property%2F2",
+                        "#sec267",
+                        "#sec268",
+                        "#date-time%2F1",
+                        "#sec270",
+                        "#sec271",
+                        "#sec272",
+                        "#sec273",
+                        "#sec274",
+                        "#sec275",
+                        "#popen%2F3",
+                        "#sec277",
+                        "#sec278",
+                        "#sec279",
+                        "#wait%2F2",
+                        "#sec281",
+                        "#sec282",
+                        "#sec283",
+                        "#select%2F5"
+                    ],
+                    "predicate/_text": [
+                        "8.27.1 argument_counter/1",
+                        "8.27.2 argument_value/2",
+                        "8.27.3 argument_list/1",
+                        "8.27.4 environ/2",
+                        "8.27.5 make_directory/1, delete_directory/1, change_directory/1",
+                        "8.27.6 working_directory/1",
+                        "8.27.7 directory_files/2",
+                        "8.27.8 rename_file/2",
+                        "8.27.9 delete_file/1, unlink/1",
+                        "8.27.10 file_permission/2, file_exists/1",
+                        "8.27.11 file_property/2",
+                        "8.27.12 temporary_name/2",
+                        "8.27.13 temporary_file/3",
+                        "8.27.14 date_time/1",
+                        "8.27.15 host_name/1",
+                        "8.27.16 os_version/1",
+                        "8.27.17 architecture/1",
+                        "8.27.18 shell/2, shell/1, shell/0",
+                        "8.27.19 system/2, system/1",
+                        "8.27.20 spawn/3, spawn/2",
+                        "8.27.21 popen/3",
+                        "8.27.22 exec/5, exec/4",
+                        "8.27.23 fork_prolog/1",
+                        "8.27.24 create_pipe/2",
+                        "8.27.25 wait/2",
+                        "8.27.26 prolog_pid/1",
+                        "8.27.27 send_signal/2",
+                        "8.27.28 sleep/1",
+                        "8.27.29 select/5"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#sec286",
+                        "http://www.gprolog.org/manual/gprolog.html#sec287",
+                        "http://www.gprolog.org/manual/gprolog.html#sec288",
+                        "http://www.gprolog.org/manual/gprolog.html#sec289",
+                        "http://www.gprolog.org/manual/gprolog.html#socket-connect%2F4",
+                        "http://www.gprolog.org/manual/gprolog.html#sec291",
+                        "http://www.gprolog.org/manual/gprolog.html#sec292",
+                        "http://www.gprolog.org/manual/gprolog.html#sec293"
+                    ],
+                    "predicate/_source": [
+                        "#sec286",
+                        "#sec287",
+                        "#sec288",
+                        "#sec289",
+                        "#socket-connect%2F4",
+                        "#sec291",
+                        "#sec292",
+                        "#sec293"
+                    ],
+                    "predicate/_text": [
+                        "8.28.1 Introduction",
+                        "8.28.2 socket/2",
+                        "8.28.3 socket_close/1",
+                        "8.28.4 socket_bind/2",
+                        "8.28.5 socket_connect/4",
+                        "8.28.6 socket_listen/2",
+                        "8.28.7 socket_accept/4, socket_accept/3",
+                        "8.28.8 hostname_address/2"
+                    ]
+                },
+                {
+                    "predicate": [
+                        "http://www.gprolog.org/manual/gprolog.html#sec295",
+                        "http://www.gprolog.org/manual/gprolog.html#sec296",
+                        "http://www.gprolog.org/manual/gprolog.html#sec297",
+                        "http://www.gprolog.org/manual/gprolog.html#sec298"
+                    ],
+                    "predicate/_source": [
+                        "#sec295",
+                        "#sec296",
+                        "#sec297",
+                        "#sec298"
+                    ],
+                    "predicate/_text": [
+                        "8.29.1 get_linedit_prompt/1",
+                        "8.29.2 set_linedit_prompt/1",
+                        "8.29.3 add_linedit_completion/1",
+                        "8.29.4 find_linedit_completion/2"
+                    ]
+                }
+            ]
+        }
+    ]
+}
