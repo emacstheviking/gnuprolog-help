@@ -1,11 +1,43 @@
+%%====================================================================
+%%
+%%     GNU Prolog console level help facility.
+%%
+%%     @author Sean James Charles <sean at objitsu dot com>
+%%
+%% This builds a database of links from GNU Prolog predicates to web
+%% anchor tags to effect a very simple (and probably flaky) command
+%% line help facility.
+%%
+%% It "works". YMMV.
+%%
+%% All you need to do is start a session, then consult the makehelp.pl
+%% file and then execute the makehelp/0 predicate. Once it is done a
+%% file called "help_links.pl" should have been created. Then you can
+%% either consult the file "runhelp.pl" at session start or, as I do,
+%% build a binary with it precompiled. See runhelp.pl for details.
+%%
+%%     $ gprolog runhelp.pl -o gprologh
+%%
+%% That's it. it seems to work. If you find a predicate that doesn't
+%% work let me know and I will dig some more at it.
+%%
+%%====================================================================
 
-:- include('../gnuprolog-fastcgi/json.pl').
+:- include('../gnuprolog-json/json.pl').
+
+%% The above file is available at:
+%%         https://github.com/emacstheviking/gnuprolog-json
+%%
+%% You will have to check that out first and make it a sibling of this
+%% folder. That's how I manage my dependencies these days for my
+%% common code.
 
 makehelp :-
 	json_decode('predicates.json', obj(JSON)),
 	json_find(pages, JSON, [obj(Pages)|_]),
+	open('help_links.pl', write, F, [alias(helplinks)]),
 	iterate_pages(Pages),
-	!.
+	close(F).
 
 
 iterate_pages([]).
@@ -23,15 +55,16 @@ iterate_results([obj(R)|Results]) :-
 	%% We could have str() values for a single entry or we could have []
 	%% values for sections with multiple predicate entries. Lists are
 	%% mapped through the single entry processor.
-	(
-	 list(PredList)
+	( list(PredList)
 	->
-	 maplist(catalog_item, PredList, PredText)
+	  maplist(catalog_item, PredList, PredText)
 	;
-	 catalog_item(PredList, PredText)
+	  catalog_item(PredList, PredText)
 	),
 	iterate_results(Results).
 
+
+%%--------------------------------------------------------------------
 %% Catalog a single item into the database. Once we have cataloged all
 %% of the predicates from the source JSON we can then do something
 %% useful with it.
@@ -48,54 +81,51 @@ iterate_results([obj(R)|Results]) :-
 %%                      U = URL anchor tag
 %%
 catalog_item(str(Url), str(Label)) :-
-	phrase(scan_until(32), Label, Line),
-	format("~s~n", [Line]).
+	phrase(next_token(_SectionNumber), Label, Line),
+	process_item(Line, Url).
 
 
-scan_until(Chr) -->
-	[C],
-	{\+ C=Chr},
-	scan_until(Chr).
+%% Process all tokens on a line, if it looks like a predicate/arity
+%% shape then take a chance of assert that it is a help link at this
+%% point.
 
+process_item([], _) :- !.
+
+process_item(Line, Url) :-
+	phrase(next_token(T), Line, Line2),
+	format("TOKEN: ~s~n", [T]),
+	( phrase(predicate_form(P), T, _)
+	->
+	  format("PREDICATE: ~s ~w~n", [P, P]),
+	  write_rule(P, Url),
+	  process_item(Line2, Url)
+	;
+	  process_item(Line2, Url)
+	).
+
+
+%% Edge-case #1: This one breaks us!
+%% .â€™ [46,195,162,226,130,172,226,132,162]
+write_rule([46,195,162,226,130,172,226,132,162], _).
+
+write_rule(P, Url) :-
+	format(helplinks, "gphelp_link('~s', \"~s\").~n", [P, Url]).
+
+
+%% DCG rules to check a predicate/arity form
+predicate_form(P) --> next_token(P), "/", digits.
+digits --> digit, digits ; digit.
+digit --> [C], { "0" =< C, C =< "9" }.
+
+
+%% DCG rules for token extraction from a help entry line
+scan_until(Chr) --> [C], {\+ C=Chr}, scan_until(Chr).
 scan_until(Chr) --> [Chr].
 
+next_token(T) --> skipws, next_token([], T).
+next_token(Acc, Out) --> " ", {reverse(Acc, Out)}.
+next_token(Acc, Out) --> [C], next_token([C|Acc], Out).
+next_token(Acc, Out) --> [], {reverse(Acc, Out)}.
 
-
-%%================ gphelp.pl ===============================
-%% Check for an environment variable that tells us if we are using a
-%% local copy or going out into cyberspace.
-help_base(Base) :-
-	\+ environ('GPHELP_BASE_URL', Base),
-	Base = 'http://www.gprolog.org/manual/gprolog.html'.
-
-
-%% Check for an environment variable that tells us how to launch the
-%% help viewer URL.
-help_launcher(Cmd) :-
-	\+ environ('GPHELP_CMD', Cmd),
-	Cmd = 'open'.
-
-
-%% Physically launch the URL help viewer.
-help_launch(Url) :-
-	help_base(Base),
-	help_launcher(Launcher),
-	format_to_atom(Cmd, "~a ~a~s", [Launcher, Base, Url]),
-	system(Cmd).
-
-
-%% The king-pin command line helper predicate. This checks to see if
-%% the help database is loaded into memory in which case it will use
-%% that to satisfy the request otherwise it will fallback.
-help(Predicate) :-
-	current_predicate(gphelp_link/2),
-	gphelp_link(Predicate, Url),
-	help_launch(Url).
-
-help(Predicate) :-
-	format("?? no predicate database... parse and load JSON for ~a~n",[Predicate]).
-
-
-
-gphelp_link(open, "#open%2F4").
-gphelp_link(atom_length, "#sec198").
+skipws --> (skipws1, skipws, !) ; (skipws1, !) ; [].
+skipws1 --> [C], { C=<32 ; C>=127}.
