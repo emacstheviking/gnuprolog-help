@@ -7,13 +7,13 @@ very slick web scraping service that outputs in various formats.
 SWI has a really good help system, but sometimes it is too helpful and
 crowded and the content really doesn't look good at times. Despite
 that, it does have a help system, and I wanted to do the same for GNU
-Prolog, which I really love because it reminds be of the gold old
+Prolog, which I really love because it reminds be of the good old
 frontier days (mid-80's onwards) when anything was possible through
-hacking.
+hacking everything with a CPU inside it.
 
 The end result of this project is a command line `help(foo).`
 predicate that will open a web browser and locate the help text for
-`foo` at the top of the page. That's the plan.
+`foo` at the top of the page. That's the plan. It seems to work.
 
 
 ## The help source.
