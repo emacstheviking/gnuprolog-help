@@ -92,7 +92,7 @@ surrounding the use of #fragments in a URL this didn't work out how I
 planned!* It's probably best to just leave them blank and accept the
 need for a web connection to the live site.
 
- - I tried using `php -S localhost:1000`,
+ - I tried using `php -S localhost:10000`,
  - I tried `python -m SimpleHTTPServer 10000`
  - I tried `ruby -run -e httpd . -p 10000`
 
