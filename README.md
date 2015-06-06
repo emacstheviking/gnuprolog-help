@@ -19,9 +19,7 @@ predicate that will open a web browser and locate the help text for
 ## The help source.
 
 Is a JSON file extracted and saved by scraping the online GNU Prolog
-documentation, section 8 to be precise. If all goes well, I may
-attempt to add other sections that have the FD constraints later but
-for now I only need section 8!
+documentation, sections 7, 8 and 9 to be precise.
 
 Way back I started trying to parse the documentation sources but got
 tired. Recently I wrote my own JSON decoder as DCG practice and then

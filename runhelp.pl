@@ -69,7 +69,7 @@ help_launch(Url) :-
 %% have created the following file, the GitHub project contains
 %% pre-generated data for GNU Prolog version 1.4.4 only.
 
-:- include(help_links).
+:- include(help_links_789).
 
 
 %% If you subsequently run this command:

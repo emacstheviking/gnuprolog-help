@@ -33,9 +33,9 @@
 %% common code.
 
 makehelp :-
-	json_decode('predicates.json', obj(JSON)),
+	json_decode('predicates-7-8-9.json', obj(JSON)),
 	json_find(pages, JSON, [obj(Pages)|_]),
-	open('help_links.pl', write, F, [alias(helplinks)]),
+	open('help_links_789.pl', write, F, [alias(helplinks)]),
 	iterate_pages(Pages),
 	close(F).
 
