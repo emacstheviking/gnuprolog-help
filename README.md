@@ -81,6 +81,21 @@ predicate, you would type this at the prompt:
 
     help(open).
 
+## Emacs Prolog Mode
+
+Emacs being the awesome superhuman piece of kit that it is, I find out that
+it *already has a command sequence pre-programmed into the mode to launch
+help for the predicate under point. Awesome. Normally it fails but if you
+build a custom binary and use that as your main executable you will find the
+keystroke to be:
+
+    C-c ?
+
+That is enough to prompot you, just hit RETURN and up it comes! Sweet. Thanks
+to the author of the Prolog mode for putting that in there from day one, that
+has saved me a job for sure.
+
+
 
 ## Environment Variables
 
