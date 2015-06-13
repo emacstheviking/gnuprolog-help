@@ -99,6 +99,22 @@ now. If anybody can get this to work from a local server and still
 have the browser locate to the anchor tag then please tell me how you
 did it!
 
+### Settings for Linux
+
+I have found that the default is not good enough and that, for most
+distros you should probably do this:
+
+    export GPHELP_CMD="xdg-open ~s"
+
+If like me you use emacs for everything then help won't work unless you
+also set that variable for emacs, the simplest way seems to be to put
+this into your ~/.emacs configuration:
+
+    (setenv "GPHELP_CMD" "xdg-open ~s")
+
+This will ensure that the command still works when running from inside
+the prolog shell.
+
 
 ### GPHELP_BASE_URL
 
